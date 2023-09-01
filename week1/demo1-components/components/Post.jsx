@@ -1,11 +1,11 @@
 import './Post.css'
 
-const Post = () => {
+const Post = (props) => {
   return (
     <div className="Post">
-    <p className="name">Marques Brownlee</p>
-     <p className="description">I want to learn how to build cleaner user interfaces.</p>
-       <p className="numLikes">❤️ 100</p>
+      <p className="name">{props.name}</p>
+      <p className="description">{props.description}</p>
+      <p className="numLikes">❤️ {props.numLikes}</p>
     </div>
   )
 }
